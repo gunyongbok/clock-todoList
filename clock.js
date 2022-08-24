@@ -1,5 +1,4 @@
 const timeContainer = document.querySelector(".clock");
-const dateContainer = document.querySelector(".date");
 const clockManager = (() => {
     const time = new Date();
     const hours = time.getHours();
