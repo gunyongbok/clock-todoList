@@ -1,32 +1,32 @@
-const enternameForm = document.querySelector(".name__form");
-const enternameInput = enternameForm.querySelector(".name__form input");
+const enterNameForm = document.querySelector(".name__form");
+const enterNameInput = enterNameForm.querySelector(".name__form input");
 const greeting = document.querySelector("h1");
 
 const nameSubmit = ((event) => {
     event.preventDefault();
-    enternameForm
+    enterNameForm
         .classList
         .add("hidden");
-    const username = enternameInput.value;
-    localStorage.setItem("username", username);
+    const userName = enterNameInput.value;
+    localStorage.setItem("userName", userName);
     // save data to local storage
-    greeting.innerText = `${username}'s to do List`;
+    greeting.innerText = `${userName}'s to do List`;
     greeting
         .classList
         .remove("hidden");
 })
 
-const getuserName = localStorage.getItem("username");
-if (getuserName === null) {
-    enternameForm
+const getUserName = localStorage.getItem("userName");
+if (getUserName === null) {
+    enterNameForm
         .classList
         .remove("hidden");
-    enternameForm.addEventListener("submit", nameSubmit);
+    enterNameForm.addEventListener("submit", nameSubmit);
     // show the form
 } else {
     greeting
         .classList
         .remove("hidden");
-    greeting.innerText = `${getuserName}'s to do List`;
+    greeting.innerText = `${getUserName}'s to do List`;
     // show the greeting
 }

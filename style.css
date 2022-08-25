@@ -1,5 +1,6 @@
-body{
+html{
     background-color: beige;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 div{
     display: flex;
@@ -12,6 +13,9 @@ div{
 }
 .hidden{
     display:none;
+}
+.name__form{
+    margin-bottom: 10px;
 }
 .name__form button{
     background-color: plum;
@@ -27,5 +31,25 @@ h1{
     margin: 0;
     font-size: 30px;
     color:blueviolet;
+    margin-bottom: 10px;
 }
-
+.todoList{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.todo__input{
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.todo__button{
+    border-radius: 5px;
+    border: none;
+    background-color: plum;
+    padding: 5px 10px;
+}
+.to__dos{
+    font-size: 20px;
+    margin-top: 10px;
+}
