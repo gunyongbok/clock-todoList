@@ -1,0 +1,15 @@
+{
+  "name": "clock-todolist",
+  "version": "1.0.0",
+  "description": "> 간단하게 시간을 24시간 기법으로 나타낸 프로그램이다. > > Todo-list와 합쳐서 구성해볼 생각이다.",
+  "main": "clock.js",
+  "homepage": "https://gunyongbok.github.io/clone-todoList/",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
